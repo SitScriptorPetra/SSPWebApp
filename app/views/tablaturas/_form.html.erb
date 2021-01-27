@@ -1,0 +1,32 @@
+<%= form_with(model: tablatura) do |form| %>
+  <% if tablatura.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tablatura.errors.count, "error") %> prohibited this tablatura from being saved:</h2>
+
+      <ul>
+        <% tablatura.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :traductor %>
+    <%= form.text_field :traductor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :web %>
+    <%= form.text_field :web %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

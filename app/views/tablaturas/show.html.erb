@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Traductor:</strong>
+  <%= @tablatura.traductor %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @tablatura.fecha %>
+</p>
+
+<p>
+  <strong>Web:</strong>
+  <%= @tablatura.web %>
+</p>
+
+<%= link_to 'Edit', edit_tablatura_path(@tablatura) %> |
+<%= link_to 'Back', tablaturas_path %>

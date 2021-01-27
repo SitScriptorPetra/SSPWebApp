@@ -1,0 +1,2 @@
+class Traductor < ApplicationRecord
+end

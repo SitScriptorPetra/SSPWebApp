@@ -1,0 +1,2 @@
+class Tablatura < ApplicationRecord
+end

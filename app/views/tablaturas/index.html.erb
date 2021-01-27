@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tablaturas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Traductor</th>
+      <th>Fecha</th>
+      <th>Web</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tablaturas.each do |tablatura| %>
+      <tr>
+        <td><%= tablatura.traductor %></td>
+        <td><%= tablatura.fecha %></td>
+        <td><%= tablatura.web %></td>
+        <td><%= link_to 'Show', tablatura %></td>
+        <td><%= link_to 'Edit', edit_tablatura_path(tablatura) %></td>
+        <td><%= link_to 'Destroy', tablatura, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tablatura', new_tablatura_path %>

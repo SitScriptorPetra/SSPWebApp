@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  traductor: 
+  fecha: 2021-01-26
+  web: MyString
+
+two:
+  traductor: 
+  fecha: 2021-01-26
+  web: MyString
